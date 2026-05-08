@@ -1,0 +1,157 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+.header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secciones */
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.presentacion {
+    background: white;
+}
+
+.habilidades span {
+    display: inline-block;
+    background: #e1e8ed;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.idiomas-seccion {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.lista-idiomas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.idioma-item {
+    background: #f9f9f9;
+    padding: 15px 25px;
+    border-left: 4px solid #27ae60; /* Un detalle de color para resaltar */
+    min-width: 200px;
+}
+
+
+/* Cita */
+.cita {
+    background: #ecf0f1;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/* Grilla de Proyectos */
+.grilla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1 1 300px; /* Responsivo: crece y se achica, base 300px */
+    max-width: 350px;
+}
+
+/* Formulario */
+.form-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-enviar {
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #3498db;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* DISEÑO RESPONSIVO (Clase 08) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .grilla {
+        flex-direction: column;
+        align-items: center;
+    }
+}
